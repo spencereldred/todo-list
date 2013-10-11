@@ -1,0 +1,93 @@
+/* Todo List CSS */
+
+@import url('http://fonts.googleapis.com/css?family=Kite+One');
+
+/* Checkboxes */
+.done, .redo, .create {
+  margin: 0 10px;
+}
+
+ /* Button */
+ .button {
+  margin: 0 10px;
+  border-radius: 10px;
+  font-size: 0.9em;
+  background-color: black;
+  color: white;
+  opacity: .7;
+ }
+
+.button:hover {
+  opacity: 1;
+}
+ /* Todo Items */
+
+#add-item {  /* text input */
+  text-align: left;
+  width: 300px;
+  font-size: 1.2em;
+}
+
+.todo-item {
+  text-align: left;
+  width: 400px;
+  font-size: 1.2em;
+  color: black;
+}
+
+.completed-item {
+  text-align: left;
+  width: 400px;
+  text-decoration: line-through;
+  font-size: 1.2em;
+  color: red;
+}
+
+/* Lists */
+
+.add-list, .todo-list, .completed-list {
+  width: 450px;
+  margin-left: 270px;
+}
+
+/* Container */
+.container {
+  position: relative;
+}
+
+.container:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background: transparent url('notepad.jpg') no-repeat;
+    margin-left: 250px;
+    height: 900px;
+   opacity: 0.8;
+}
+
+.content {
+    position: relative;
+    z-index: 2;
+}​
+
+body {
+  margin-left: 250px;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Kite One', sans-serif;
+  font-size: 2em;
+}
+
+ol >li {
+    font-family: 'Kite One', sans-serif;
+}
+
+input {
+  font-family: 'Kite One', sans-serif;
+}
